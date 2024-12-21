@@ -1,2 +1,16 @@
-<h1>Admin Dashboard</h1>
-<p>Manage the system here!</p>
+<!-- admin-dashboard.component.html -->
+<div class="dashboard-container">
+    <div class="sidebar">
+      <h2>Admin Dashboard</h2>
+      <nav>
+        <ul>
+          <li><a routerLink="/admin-dashboard">Dashboard</a></li>
+          <li><a routerLink="/manage-users">Manage Users</a></li>
+          <li><a routerLink="/reports">Reports</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+  </div>
+  
